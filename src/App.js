@@ -30,6 +30,7 @@ import Registration from './components/Registration';
 import ResetEmail from './components/ResetEmail';
 import ReviewProject from './components/ReviewProject';
 import SharePage from './components/SharePage';
+import AppRoute from './AppRoute';
 
 
 
@@ -65,9 +66,10 @@ function App() {
     {/* <SetRate /> */}
     {/* <RegistrationDetails /> */}
     {/* <Registration /> */}
-    <ResetEmail />
+    {/* <ResetEmail /> */}
     {/* <ReviewProject /> */}
     {/* <SharePage /> */}
+    <AppRoute />
 
 
     </div>

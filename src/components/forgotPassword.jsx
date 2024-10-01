@@ -25,7 +25,7 @@ const ForgetPassword = () => {
           alert('An email has been sent to your registered mail Id. Please check your email Inbox');
         } else if (result.error && result.error === 'Token is expired') {
           alert('Token is expired. A new token has been sent to your email address.');
-          window.location.href = '/login';
+          window.location.href = '/';
         } else {
           alert('Failed to send password reset email. Please try again.');
         }
@@ -37,7 +37,7 @@ const ForgetPassword = () => {
   };
 
   const handleCancel = () => {
-    window.location.href = '/login'; // Redirect to the login page
+    window.location.href = '/'; // Redirect to the login page
   };
 
   return (
@@ -46,9 +46,9 @@ const ForgetPassword = () => {
         <img src="/paid2work-logo.jpeg" alt="Paid2work Logo" style={{ width: '200%' }} />
       </div>
       <div className="header-links">
-        <a href="/login">Already have a Paid2workk account?</a>
+        <a href="/">Already have a Paid2workk account?</a>
         <br />
-        <a href="/login" className="log-in">Log In</a>
+        <a href="/" className="log-in">Log In</a>
       </div>
       <div className="containeerr">
         <img src="/email-loggoo.png" alt="Envelope Icon" style={{ width: '35%' }} />

@@ -116,7 +116,7 @@ const Login = () => {
               <input type="checkbox" id="rememberMe" />
               <label htmlFor="rememberMe"> Remember me</label>
             </div>
-            <a href="forgot-password.html" className="forgot-password">
+            <a href="/forgetpassword" className="forgot-password">
               Forgot Password?
             </a>
           </div>
@@ -124,7 +124,7 @@ const Login = () => {
         <br />
         <br />
         <div className="log-in-button">
-          <button type="submit">Log in</button>
+          <button type="submit" onClick={()=> {window.location.href = '/dashboard'}}>Log in</button>
         </div>
 
         {errorMessage && <div id="errorMessage" className="error-message">{errorMessage}</div>}
@@ -133,7 +133,7 @@ const Login = () => {
         <div>
           <hr />
           <p style={{ fontSize: "14px" }}>
-            Don't have an account? <a href="signUp.html" className="an-account" style={{ color: "blue", textDecoration: "none" }}>Sign up</a>
+            Don't have an account? <a href="/signup" className="an-account" style={{ color: "blue", textDecoration: "none" }}>Sign up</a>
           </p>
         </div>
       </form>

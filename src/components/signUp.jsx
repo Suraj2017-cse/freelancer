@@ -13,7 +13,7 @@ const SignUp = () => {
 
   const handleCreateAccountClick = () => {
     if (isButtonEnabled) {
-      window.location.href = './registration.html';
+      window.location.href = '/registration';
     }
   };
 
@@ -25,7 +25,8 @@ const SignUp = () => {
       <br />
       <h1>Join as a client or freelancer</h1>
 
-      <div
+     <div className='d-flex justify-content-center'>
+     <div
         className={`option ${selectedRole === '0' ? 'selected' : ''}`}
         onClick={() => handleOptionClick('0')}
       >
@@ -46,6 +47,7 @@ const SignUp = () => {
           <p>I'm a freelancer,<br />looking for work</p>
         </label>
       </div>
+     </div>
 
       <button
         className={`btn-create ${isButtonEnabled ? 'enabled' : ''}`}
@@ -55,7 +57,7 @@ const SignUp = () => {
         Create Account
       </button>
 
-      <a href="login.html" className="login-link">
+      <a href="/" className="login-link">
         Already have an account? <span>Log In</span>
       </a>
     </div>
